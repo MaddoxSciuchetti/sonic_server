@@ -3,7 +3,7 @@
 
 ```docker pull valeriansaliou/sonic:v1.4.9```
 
-2.create a config.cfg file in a created folder
+2. create a dedicated folder and a config.cfg file
 
 ```-mkdir folder_name```
 ```-touch config.cfg```
@@ -22,7 +22,7 @@
 
 ```docker run -p 1491:1491 -v ./store/:/var/lib/sonic/store/ your_chosen_container_name```
 
-7. add an alias name && let it run in background
+7. add an alias name && let it the container run in the background
 
 ```docker run --name alias_name -p 1491:1491 -v ./store/:/var/lib/sonic/store/ your_chosen_container_name -d```
 
