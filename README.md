@@ -29,3 +29,6 @@ docker run -p 1491:1491 -v ./store/:/var/lib/sonic/store/ maddox/sonic
 docker run --name sonic -p 1491:1491 -v ./store/:/var/lib/sonic/store/ maddox/sonic -d
 
 8. start the container: docker start name 
+
+
+sdfsdfsdf
