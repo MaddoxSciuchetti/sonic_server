@@ -20,11 +20,11 @@
 
 6. run the docker image
 
-```docker run -p 1491:1491 -v ./store/:/var/lib/sonic/store/ maddox/sonic```
+```docker run -p 1491:1491 -v ./store/:/var/lib/sonic/store/ your_chosen_container_name```
 
 7. add an alias name && let it run in background
 
-```docker run --name sonic -p 1491:1491 -v ./store/:/var/lib/sonic/store/ maddox/sonic -d```
+```docker run --name alias_name -p 1491:1491 -v ./store/:/var/lib/sonic/store/ your_chosen_container_name -d```
 
-8. start the container: ```docker start name ```
+8. start the container: ```docker start alias_name ```
 
