@@ -5,16 +5,16 @@
 
 2. create a dedicated folder and a config.cfg file
 
-```-mkdir folder_name```
-```-touch config.cfg```
+```mkdir folder_name```
+```touch config.cfg```
 
 3. run docker
 
 ```docker run -p 1491:1491 -v ./config.cfg:/etc/sonic.cfg -v ./store/:/var/lib/sonic/store/ valeriansaliou/sonic:v1.4.9```
 
-4. add a Dockerfile and run: ```docker build -t your_chosen_container_name . ```
+4. build the docker image based on the docker file ```docker build -t your_chosen_container_name . ```
 
-5. create the docker image 
+5. create the docker image - führt docker image aus - die instance wo das image läuft ist der container
 
 ```docker run -v ./store/:/var/lib/sonic/store/ your_chosen_container_name```
 
